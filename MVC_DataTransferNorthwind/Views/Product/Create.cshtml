@@ -1,0 +1,20 @@
+﻿@if (TempData["Success"] != null || TempData["Error"] != null)
+{
+    <span>@TempData["Success"]</span>
+    <span>@TempData["Error"]</span>
+
+}
+
+
+
+<form method="post">
+    <div>
+        <label>Ürün Ad</label>
+        <input type="text" name="ProductName" />
+    </div>
+    <div>
+        <label>Ürün Fiyat</label>
+        <input type="number" name="UnitPrice" />
+    </div>
+    <button>Oluştur</button>
+</form>

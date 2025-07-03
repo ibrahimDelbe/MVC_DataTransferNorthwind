@@ -1,0 +1,19 @@
+﻿@if(TempData["Success"]!=null||TempData["Error"]!=null){
+    <span>@TempData["Success"]</span>
+    <span>@TempData["Error"]</span>
+
+}
+
+
+
+<form method="post">
+    <div>  
+        <label>Kategori Ad</label>
+        <input type="text" name="CategoryName" />
+    </div>
+    <div>
+        <label>Description</label>
+        <input type="text" name="Description" />
+    </div>
+    <button>Oluştur</button>
+</form>
